@@ -1,0 +1,481 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 1245px){
+    .container{
+        max-width: 100%;
+    }
+    .nav{
+        max-width: 100%;
+        padding: 0px 130px 0px;
+    }
+    .first-div{
+        max-width: 100%;
+        height: 125vh;
+        padding: 150px 130px 25px;
+    }
+    .header{
+        max-width: 100%;
+    }
+    .head{
+        width: 48%;
+    }
+    .head h3{
+        font-size: 20px;
+    }
+    .head h1{
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .para{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .head button{
+        height: 45px;
+        font-size: 16px;
+        width: 200px;
+    }
+    .grid{
+        gap: 18px;
+    }
+    .top{
+        padding: 50px 140px 0px;
+    }
+    .about .top{
+        padding: 50px 30px 0px;
+    }
+    .top h1{
+        font-size: 28px;
+    }
+    .recommend img{
+        height: 26px;
+        width: 26px;
+    }
+    .news{
+        padding: 35px 140px 0px;
+    }
+    .about{
+        height: 100vh;
+    }
+    .info-grid{
+        padding: 20px 30px 0px;
+    }
+    .inform{
+        height: 94%;
+    }
+    .info h2{
+        font-size: 18px;
+        width: 90%;
+    }
+    .intro p{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .these{
+        font-size: 16px;
+    }
+    .click i{
+        font-size: 16px;
+    }
+    .footer{
+        height: 100vh;
+        padding: 50px 30px 0px;
+    }
+    .contact{
+        height: auto;
+        flex-direction: column;
+    }
+    .right button{
+        height: 42px;
+        width: 100px;
+        font-size: 15px;
+    }
+    .left{
+        padding-left: 850px;
+    }
+    .last{
+        padding: 15px 30px 15px;
+    }
+}
+@media (max-width: 1163px){
+    .container{
+        max-width: 100%;
+    }
+    .nav{
+        max-width: 100%;
+        padding: 0px 140px 0px 100px;
+    }
+    .first-div{
+        max-width: 100%;
+        height: 125vh;
+        padding: 150px 100px 25px;
+    }
+    .top{
+        padding: 50px 100px 0px;
+    }
+    
+}
+@media (max-width: 1140px){
+    .container{
+        max-width: 100%;
+    }
+    .nav{
+        max-width: 100%;
+        padding: 0px 130px 0px 90px;
+    }
+    .first-div{
+        max-width: 100%;
+        height: 125vh;
+        padding: 150px 90px 25px;
+    }
+    .top{
+        padding: 50px 90px 0px;
+    }
+}
+@media (max-width: 1110px){
+    .container{
+        max-width: 100%;
+    }
+    .nav{
+        max-width: 100%;
+        padding: 0px 120px 0px 80px;
+    }
+    .first-div{
+        max-width: 100%;
+        height: 125vh;
+        padding: 150px 80px 25px;
+    }
+    .top{
+        padding: 50px 80px 0px;
+    }
+}
+@media (max-width: 1030px){
+    .container{
+        max-width: 100%;
+    }
+    .nav{
+        max-width: 100%;
+        padding: 0px 100px 0px 30px;
+    }
+    .first-div{
+        max-width: 100%;
+        height: 125vh;
+        padding: 150px 30px 25px;
+    }
+    
+}
+@media (max-width: 1020px){
+    .container{
+        max-width: 100%;
+    }
+    .nav{
+        max-width: 100%;
+        padding: 0px 100px 0px 30px;
+        display: none;
+    }
+    .nav2{
+        display: flex;
+        padding: 0px 30px 0px 30px;
+        align-items: center;
+    }
+    .first-div{
+        max-width: 100%;
+        height: 93vh;
+        padding: 120px 180px 25px;
+    }
+    .item{
+        height: 4px;
+    }
+    .header{
+        max-width: 100%;
+    }
+    .head{
+        width: 45%;
+    }
+    .head h3{
+        font-size: 18px;
+    }
+    .head h1{
+        font-size: 28px;
+        line-height: 35px;
+        padding-top: 5px;
+    }
+    .para{
+        font-size: 18px;
+        line-height: 31px;
+        padding-top: 8px;
+    }
+    .grid .item h4, .none{
+        display: none;
+    }
+    .top h1{
+        font-size: 24px;
+    }
+    .these{
+        font-size: 14px;
+    }
+    .click i{
+        font-size: 14px;
+    }
+    .intro p{
+        font-size: 18px;
+        line-height: 31px;
+    }
+    .info h2{
+        font-size: 15px;
+    }
+    .footer{
+        height: 165vh;
+        padding: 50px 180px 0px;
+    }
+    .foot-grid{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0px;
+        height: 83%;
+    }
+    .foot-links{
+        gap: 16px;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+       gap: 40px;
+    }
+    .left{
+        padding-left: 0px;
+    }
+    .right button{
+        height: 40px;
+        width: 100px;
+        font-size: 14px;
+    }
+    .right .sign{
+        font-size: 17px;
+    }
+    .last{
+        height: 165px;
+    }
+    .final div{
+        height: 50px;
+    }
+    .final div a{
+       margin-right: 10px;
+       padding-right: 10px;
+       font-size: 13px;
+    }
+}
+@media (max-width: 950px){
+    .first-div{
+        max-width: 100%;
+        height: 93vh;
+        padding: 120px 160px 25px;
+    }
+    .before .top{
+        padding: 50px 160px 0px;
+    }
+    .news{
+        padding: 35px 160px 0px;
+    }
+    .footer{
+        height: 165vh;
+        padding: 50px 160px 0px;
+    }
+}
+@media (max-width: 900px){
+    .first-div{
+        max-width: 100%;
+        height: 93vh;
+        padding: 120px 120px 25px;
+    }
+    .before .top{
+        padding: 50px 120px 0px;
+    }
+    .news{
+        padding: 35px 120px 0px;
+    }
+    .footer{
+        height: 165vh;
+        padding: 50px 120px 0px;
+    }
+}
+@media (max-width: 820px){
+    .first-div{
+        max-width: 100%;
+        height: 93vh;
+        padding: 120px 100px 25px;
+    }
+    .head{
+        width: 49%;
+    }
+    .before .top{
+        padding: 50px 100px 0px;
+    }
+    .news{
+        padding: 35px 100px 0px;
+    }
+    .footer{
+        height: 165vh;
+        padding: 50px 100px 0px;
+    }
+}
+@media (max-width: 768px){
+    .first-div{
+        max-width: 100%;
+        height: 93vh;
+        padding: 120px 50px 25px;
+    }
+    .before .top{
+        padding: 50px 50px 0px;
+    }
+    .news{
+        padding: 35px 50px 0px;
+    }
+    .footer{
+        height: 165vh;
+        padding: 50px 50px 0px;
+    }
+}
+@media (max-width: 710px){
+    .first-div{
+        max-width: 100%;
+        height: 93vh;
+        padding: 120px 40px 25px;
+    }
+    .before .top{
+        padding: 50px 40px 0px;
+    }
+    .news{
+        padding: 35px 40px 0px;
+    }
+    .footer{
+        height: 165vh;
+        padding: 50px 40px 0px;
+    }
+}
+@media (max-width: 702px){
+    .first-div{
+        max-width: 100%;
+        height: 93vh;
+        padding: 120px 30px 25px;
+    }
+    .before .top{
+        padding: 50px 30px 0px;
+    }
+    .news{
+        padding: 35px 30px 0px;
+    }
+}
+@media (max-width: 670px){
+    .first-div{
+        max-width: 100%;
+        height: 93vh;
+        padding: 120px 25px 25px;
+    }
+    .footer{
+        height: 165vh;
+        padding: 50px 30px 0px;
+    }
+}
+@media (max-width: 660px){
+    .first-div{
+        max-width: 100%;
+        height: 93vh;
+        padding: 120px 20px 25px;
+    }
+    
+}
+@media (max-width: 638px){
+    .first-div{
+        max-width: 100%;
+        height: 93vh;
+        padding: 70px 20px 25px;
+    }
+    .head{
+        width: 100%;
+    }
+    .head button {
+        height: 40px;
+        width: 165px;
+        font-size: 14px;  
+    }
+    .top{
+        padding: 50px 20px 0px;
+    }
+    .about{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .about .top{
+        padding: 50px 20px 0px; 
+    }
+    .before .top{
+        padding: 50px 20px 0px;
+    }
+    .news{
+        padding: 35px 20px 0px;
+    }
+    .footer{
+        padding: 20px 20px 0px;
+    }
+    .foot-grid{
+        grid-template-columns: 1fr;
+        row-gap: 0px;
+        height: 70%
+    }
+    .foot .company{
+        width: 100%;
+    }
+    .foot h2{
+        font-size: 16px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .foot-links{
+        gap: 28px;
+        margin-left: 15px;
+    }
+    .foot-links a{
+        font-size: 16px;
+    }
+    .rows{
+        display: flex;
+        gap: 20px;
+    }
+    .contact{
+        margin-top: 40px;
+    }
+    .right {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .right button{
+        margin-top: 10px;
+    }
+    .left{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .last{
+        height: 200px;
+    }
+    .last .start{
+        flex-direction: column;
+        height: 30%;
+    }
+    .final{
+        height: 70%;
+    }
+    .final div{
+        align-items: start;
+        text-align: center;
+    }
+}
+@media (max-width: 350px){
+
+}

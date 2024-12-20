@@ -1,0 +1,597 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: NVIDIA,Arial,Helvetica,Sans-Serif;
+}
+.nav{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0px 200px 0px 120px;
+    background-color: white;
+}
+.nav a{
+    text-decoration: none;
+    color: #666;
+    font-weight: 10;
+    font-size: 14px;
+    letter-spacing: normal;
+
+}
+.logo svg{
+    height: 44px;
+    width: 110px;
+    padding-top: 3px;
+}
+.nav svg{
+    color: black;
+}
+.search{
+    height: 24px;
+    width: 24px;
+    fill: #666;
+    display: inline-block;
+}
+.part-one{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.part-one a{
+    font-weight: 100;
+}
+.part-two{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.part-two li a i{
+    color: #666;
+    font-size: 18px;
+}
+.person {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+.nav2{
+    display: none;
+    align-items: center;
+}
+.nav2 div a svg{
+    height: 24px;
+    width: 24px;
+    
+}
+.nav2 div{
+    display: flex;
+    align-items: center;
+}
+.nav2 .menu{
+    display: flex;
+    gap: 15px;
+}
+.first-div{
+    height: 110vh;
+    width: 100%;
+    background-color: black;
+    padding: 150px 120px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('/assets/partnership.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    animation-name: change;
+    animation-duration: 72s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes change{
+    0%{
+        background-image: url('/assets/partnership.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    20%{
+        background-image: url('/assets/cq5dam.thumbnail.319.319.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: contain;
+        transition: ease;
+    }
+    40%{
+        background-image: url('/assets/nvidia-nim-aws-sfg.jpeg');
+        background-repeat: no-repeat;
+        background-position-x: 300px;
+        background-size: auto 90%;
+        object-fit: contain;
+        
+    }
+    60%{
+        background-image: url('/assets/re-invent-robotics-me-web-banner-sm-t.jpg');
+        background-position-x: 300px;
+        background-size: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    80%{
+       background-image: url('/assets/nvidia-and-microsoft-partnership-h-on-dark.svg');
+       background-size: 50% 70%;
+       background-position-x: right;
+       background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url('/assets/omniverse-blueprint-bbm-gel-t.jpg');
+        object-fit: contain;
+        left: 0;
+        right: 0;
+    }
+}
+.first-delay{
+    animation-delay: 12s;
+}
+.second-delay{
+    animation-delay: 24s;
+}
+.third-delay{
+    animation-delay: 36s;
+}
+.fourth-delay{
+    animation-delay: 48s;
+}
+.fifth-delay{
+    animation-delay: 60s;
+}
+.header{
+    height: 70%;
+    color: white;
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+}
+.header img{
+    height: 90%;
+    width: 50%;
+    display: none;
+}
+.head{
+    width: 50%;
+}
+.head h3{
+    font-size: 24px;
+}
+.head h1{
+    line-height: 60px;
+    font-size: 48px;
+    padding-top: 10px;
+}
+.para{
+    font-size: 22px;
+    line-height: 38px;
+    padding-top: 10px;
+}
+.head button{
+    height: 50px;
+    width: 210px;
+    background-color: #76b900;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 3fr);
+    gap: 32px;
+}
+.item{
+    height: 90px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.item:hover {
+    color: white;
+}
+.item div{
+    height: 4px;
+    width: 100%;
+    background-color: #666;
+    animation-name: scrolling;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    scroll-behavior: smooth;
+    animation-timing-function: linear;
+    transform-origin: left;
+}
+/* @keyframes scrolling{
+    from{
+        scale: 0 1;
+       
+    }
+    to{
+        scale: 1 1;
+        background: #76b900;
+    }
+} */
+.item h4{
+    padding-top: 16px;
+    font-size: 11px;
+}
+.item p{
+   padding-top: 10px;
+   font-size: 15px;
+   line-height: 25px;
+}
+.before{
+    background-color: #1a1a1a;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.before h1{
+    color: white;
+}
+.news{
+    display: grid;
+    grid-template-columns: repeat(8, 300px);
+    column-gap: 35px;
+    overflow: scroll hidden;
+    height: 100%;
+    width: 100%;
+    padding: 35px 125px 0px;
+    border-radius: 2px;
+}
+.news::-webkit-scrollbar {
+    display: none;
+}
+.news .events{
+    height: 82%;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 3px;  
+}
+.events img{
+    height: 64%;
+    width: 100%;
+    object-fit: cover;
+}
+.events div{
+    padding: 13px 15px 0px;
+}
+.events h4{
+    font-size: 11px;
+}
+.events p{
+    font-size: 15px;
+    padding-top: 13px;
+    font-weight: bold;
+}
+.about{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* padding: 70px 125px 0px; */
+}
+.top{
+    padding: 50px 120px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+}
+.top h1{
+    font-size: 36px;
+}
+
+.recommend{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.recommend img{
+    height: 30px;
+    width: 30px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.buttons button{
+    height: 35px;
+    width: 30px;
+    background-color: #76b900;
+    border: none;
+    font-weight: lighter;
+}
+.buttons button i{
+    font-size: 20px;
+}
+.buttons button:hover {
+    opacity: 0.8;
+    padding-right: 5px;
+    transition: ease;
+}
+.secondone :hover {
+    padding-left: 5px;
+    transition: ease;
+}
+.info-grid{
+    display: grid;
+    grid-template-columns: 500px 420px 420px 420px 420px 420px 420px 420px 420px 420px 420px;
+    column-gap: 35px;
+    overflow: scroll hidden;
+    height: 100%;
+    width: 100%;
+    padding: 25px 120px 0px;
+    border-radius: 2px;
+}
+.info-grid::-webkit-scrollbar {
+    height: 5px;
+    padding: 0px 120px 0px;
+}
+.info-grid::-webkit-scrollbar-track {
+    background: lightgrey;
+    width: 70%;
+}
+.info-grid::-webkit-scrollbar-thumb {
+    background: #76b900;
+}
+.inform{
+    height: 94%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px 0 rgba(7, 7, 7, 0.35);
+}
+.inform:hover{
+    box-shadow: 0 0 15px 0 rgba(7, 7, 7, 0.35);
+}
+.inform img{
+    height: 45%;
+    width: 100%;
+}
+.inform .info{
+    height: 55%;
+    width: 100%;
+    padding: 25px 20px 0px;
+}
+.info h3{
+    font-size: 14px;
+    font-weight: 700;
+}
+.info h2{ 
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 80%;
+}
+.info p{
+    font-size: 15px;
+    padding-top: 30px;
+    width: 90%;
+    line-height: 25px;
+}
+.intro{
+    background-color: white;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+}
+.intro p{
+    font-size: 22px;
+    line-height: 38px;
+    box-shadow: none;
+    color: #1a1a1a;
+    font-weight: 200;
+}
+.intro:hover {
+    box-shadow: none;
+}
+.links{
+    padding-top: 30px;
+    height: 60%;
+}
+.these{
+    font-size: 18px;
+    font-weight: bold;
+}
+.quick{
+    display: flex;
+    flex-direction: column;
+}
+.quick:hover .all {
+    display: flex;
+}
+.quick .click{
+    display: flex;
+}
+.click{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    display: inline;
+}
+.click i{
+    font-size: 20px;
+    color: #76b900;
+}
+.all{
+    display: none;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 30px;
+}
+.all .con{
+    display: flex;
+    gap: 40px;
+}
+.all .con .click{
+    display: flex;
+}
+.next{
+    height: 100vh;
+}
+.footer{
+    height: 80vh;
+    background-color: black;
+    margin-top: 65px;
+    padding: 60px 120px 0px;
+}
+.foot-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    height: 80%;
+}
+.foot-grid .foot{
+    height: 100%;
+}
+.foot h2{
+    color: #eee;
+    font-size: 24px;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    border-bottom: 1px solid #747474;
+}
+.foot-links{
+    display: flex;
+    flex-direction: column;
+    gap: 17px; 
+    margin-top: 16px;
+}
+.foot-links a{
+    color: #76b900;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.contact{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+}
+.right .sign{
+    text-decoration: none;
+    color: white;
+}
+.right .sign p{
+    font-size: 18px;
+}
+.right button{
+    height: 45px;
+    width: 105px;
+    background-color: #76b900;
+    border: none;
+    font-size: 16px;
+}
+.right button a{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.left a{
+    text-decoration: none;
+    color: #666;
+}
+.media{
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.media a i{
+    font-size: 25px;
+}
+.media a:hover i{
+    color: #eee;
+}
+.space{
+    height: 60px;
+    width: 100%;
+}
+.last{
+    height: 150px;
+    width: 100%;
+    background-color: white;
+    padding: 15px 120px 15px;
+}
+.last .start a svg{
+    color: black;
+}
+.start{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.start p{
+    color: #666;
+    font-weight: bold;
+    font-size: 17px;
+}
+.last .final div a{
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.final div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.final .in{
+    height: 14px;
+    width: 1px;
+    background-color: #666;
+}
+.final p{
+    padding-top: 8px;
+    font-size: 12px;
+    color: #666;
+}
